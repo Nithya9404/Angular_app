@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <div class="container p-5">
+ 
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employee">
+            
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstname}}</td>
+            <td>{{employee.lastname}}</td>
+            <td>{{employee.emailid}}</td>
+          </tr>
+        
+        </tbody>
+      </table>
+      
+     
+      </div>
+    
+    <script src="" async defer></script>
+  </body>
+</html>
